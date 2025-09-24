@@ -31,7 +31,6 @@ test('CRM Framework', async ({browser})=>
     const ldp = new leadspage(page);
     await ldp.leadscredentials(dataset.lastname,dataset.title);
 
-
 });
 
 test.afterEach(async ()=>{
