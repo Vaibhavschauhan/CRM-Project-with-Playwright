@@ -5,6 +5,7 @@ class logoutpage{
     }
 
     async signout(){
+        await this.userfoto.waitFor({ state: 'visible' });
         await this.userfoto.hover();
         await this.signoutbtn.click();
 
